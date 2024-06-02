@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="utf-8"/>
+    <title>Catarina Gomes</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon-nobg.ico">
+
+    <link rel="stylesheet" href="docs/assets/CSS/styles.css">
+    <link rel="stylesheet" href="docs/assets/CSS/ptTitleStyles.css">
+    <link rel="stylesheet" href="docs/assets/CSS/starsBg.css">
+
+    <link rel="canonical" href="https://catarina27.github.io/catarinafg.github.io/index.html" />
+    <link rel="alternate" href="https://catarina27.github.io/catarinafg.github.io/english.html" hreflang="en-gb" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch('docs/assets/content.json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('greeting').textContent = data.greeting;
+                    document.getElementById('about_me_title').textContent = data.about_me.title;
+                    document.getElementById('about_me').innerHTML = data.about_me.description.map(paragraph => `<p>${paragraph}</p>`).join('');
+                    document.getElementById('competencias_title').textContent = data.competencias.title;
+                    document.getElementById('competencias_description').innerHTML = data.competencias.description.map(paragraph => `<p>${paragraph}</p>`).join('');
+                    document.getElementById('projetos_title').textContent = data.projetos.title;
+                    document.getElementById('project1_title').textContent = data.projetos.project1.title;
+                    document.getElementById('project1_description').textContent = data.projetos.project1.description;
+                    document.getElementById('project2_title').textContent = data.projetos.project2.title;
+                    document.getElementById('project2_description').textContent = data.projetos.project2.description;
+                    document.getElementById('contactos_title').textContent = data.contactos.title;
+                    document.getElementById('contactos_description').innerHTML = data.contactos.description.map(paragraph => `<p>${paragraph}</p>`).join('');
+                });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    
+    <div class="menu">
+        <a href="#competencias_title"><button id="btn" type="button">Competências</button></a>
+        <a href="#projetos_title"><button id="btn" type="button">Projetos</button></a>
+        <a href="#contactos_title"><button id="btn" type="button">Contactos</button></a>
+        <a href="https://catarina27.github.io/catarinafg.github.io/docs/dummy.pdf" target="_blank"><button id="btn" type="button">Currículo</button></a>
+    </div>
+
+    <a href="english.html"><button class="button" data-text="Awesome">
+        <span class="actual-text">&nbsp;En⠀⠀⠀&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;English&nbsp;</span>
+    </button></a>
+
+    <h1 class="center" aria-label="Hi! I'm a developer">
+        Olá! Sou&nbsp;<span class="typewriter"></span>
+    </h1>
+    <h1 id="greeting" class="center" aria-label="Hi! I'm a developer"></h1>
+
+    <div class="group">
+        <h2 id="about_me_title"></h2>
+        <div class="project1"> 
+            <div class="description" id="about_me">
+                <!-- Content will be injected here -->
+            </div>
+        </div>
+        <img class="profileImage" src="docs/assets/images/dummyPfp.jpg" onload="" alt="Foto de perfil">
+    </div>
+
+    <div class="group">
+        <div class="center">
+            <h2 id="competencias_title"></h2>
+            <p id="competencias_description"></p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <p></p>
+            </div>
+            <ol>
+                <div class="column">
+                    <li>Ponto 1</li>
+                    <li>Ponto 2</li>
+                </div>
+                
+                <div class="column">
+                    <li>Ponto 3</li>
+                    <li>Ponto 4</li>
+                </div>
+
+                <div class="column">
+                    <li>Ponto 5</li>
+                    <li>Ponto 6</li>
+                </div>
+            </ol>
+        </div>
+    </div>
+
+    <div class="group">
+        <h2 id="projetos_title"></h2>
+        <div class="project1">
+            <h3 id="project1_title"></h3>
+            <a href="VirtualPet/VirtualPet.html"><button id="btn" type="button" data-text="Awesome">
+                <span class="actual-text">&nbsp;Ver+&nbsp;</span>
+            </button></a>
+            <p id="project1_description"></p>
+            <small>React</small>
+            <small>Java</small>
+            <small>Weather API</small>
+        </div>
+        <img class="projectImage" src="docs/assets/images/dummyImage.jpg" onload="" alt="Imagem do projeto 1">
+        
+        <div class="project2">
+            <p id="project2_description"></p>
+            <small>JavaScript</small>
+            <small>HTML</small>
+            <small>CSS</small>
+        </div>
+        <img class="projectImage" src="docs/assets/images/dummyImage.jpg" onload="" alt="Imagem do projeto 2">
+    </div>
+
+    <div class="group">
+        <div class="center">
+            <h2 id="contactos_title"></h2>
+            <p id="contactos_description"></p>
+            <a href="https://catarina27.github.io/catarinafg.github.io/docs/dummy.pdf" target="_blank"><button id="btn" type="button">Currículo</button></a>
+            <a href="mailto:catarina.fe.gomes@gmail.com">catarina.fe.gomes@gmail.com</a>
+        </div>
+    </div>   
+
+    <a href="#" class="top">Para cima &#8593;</a>      
+</body>
+</html>

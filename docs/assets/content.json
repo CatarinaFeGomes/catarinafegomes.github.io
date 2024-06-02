@@ -1,0 +1,34 @@
+{
+    "about_me": {
+        "title": "01.Sobre mim_____________",
+        "description": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin urna sit amet molestie iaculis. Sed nec erat posuere, aliquam ipsum non, egestas nisi.",
+        "Sed in nulla sed justo tempus tincidunt. Vestibulum tempor ante a ornare eleifend. In porttitor diam vitae consequat euismod. Morbi cursus massa eget ligula eleifend convallis.", 
+        "Phasellus turpis felis, pellentesque quis pharetra vitae, posuere quis nisl. Maecenas et elit et ex tincidunt aliquam eget faucibus dui. Morbi consectetur convallis laoreet. Vestibulum vehicula, felis sit amet lacinia porttitor, augue tellus tristique diam, quis eleifend lacus magna sit amet tortor."
+        ]
+    },
+    "competencias": {
+        "title": "02.Competências_____________",
+        "description": [
+            "Maecenas et elit et ex tincidunt aliquam eget faucibus dui. Morbi consectetur convallis laoreet."
+        ]
+    },
+    "projetos": {
+        "title": "03.Projetos_________________",
+        "project1": {
+            "title": "Companheiro virtual",
+            "description": "Um jogo simples inspirado nos populares tamagotchis dos anos 90."
+        },
+        "project2": {
+            "title": "Titulo do projeto 2",
+            "description": "Phasellus turpis felis, pellentesque quis pharetra vitae, posuere quis nisl. Maecenas et elit et ex tincidunt aliquam eget faucibus dui. Morbi consectetur convallis laoreet. Vestibulum vehicula, felis sit amet lacinia porttitor, augue tellus tristique diam, quis eleifend lacus magna sit amet tortor."
+        }
+    },
+    "contactos": {
+        "title": "04.Contactos________________",
+        "description": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin urna sit amet molestie iaculis. Sed nec erat posuere, aliquam ipsum non, egestas nisi.",
+            "Sed in nulla sed justo tempus tincidunt. Vestibulum tempor ante a ornare eleifend. In porttitor diam vitae consequat euismod. Morbi cursus massa eget ligula eleifend."
+        ]
+    }
+}

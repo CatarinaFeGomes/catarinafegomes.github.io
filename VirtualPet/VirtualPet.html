@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+<head>
+    <meta charset="utf-8"/>
+    <title>Virtual Pet</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon-nobg.ico">
+
+    <link rel="stylesheet" href="Docs/Assets/CSS/styles.css">
+    <link rel="stylesheet" href="Docs/assets/CSS/petGame.css">
+
+    <link rel="canonical" href="https://catarina27.github.io/catarinafg.github.io/VirtualPet/VirtualPet.html" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch('docs/assets/content.json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('greeting').textContent = data.greeting;
+                    document.getElementById('about_me_title').textContent = data.about_me.title;
+                });
+        });
+    </script>
+</head>
+
+<body>
+    <a href="/index.html"><button class="button" data-text="Awesome">
+        <span class="actual-text">&nbsp;Pt⠀⠀⠀⠀⠀&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Português&nbsp;</span>
+    </button></a>
+
+    <a href="/english.html"><button class="button" data-text="Awesome">
+        <span class="actual-text">&nbsp;En⠀⠀⠀&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;English&nbsp;</span>
+    </button></a>
+
+    <div  class="mainPetBox">
+        <div class="petBoxSingular" id="petBoxSingular">
+            <input type="text" class="petName" placeholder="Pet's Name Goes Here"></input>
+            <img id="petIcon" class="petIcon" src="Docs/Assets/images/dog.gif">
+            
+            <div class="petObjects">
+                <p>Hunger: 
+                    <progress class="objectLevels" id="hungerLevel" max="100" value="60"> 60% </progress>
+                </p>
+                <p>Happiness: 
+                    <progress id="happinessLevel" class="objectLevels" max="100" value="10">10%</progress>
+                </p>
+                <p>Energy: 
+                    <progress id="energyLevel" class="objectLevels" max="100" value="50">50%</progress>
+                </p>
+            </div>
+
+            <button type="submit" class="objectButtons" id="feedBtn">Feed</button>
+            <button type="submit" class="objectButtons" id="playBtn">Play</button>
+            <button type="submit" class="objectButtons" id="sleepBtn">Sleep</button>
+
+            <!--
+            <button type="submit" class="objectButtonsRIP" id="buttonKillPet">RIP</button>
+            <button type="submit" class="objectButtonsRIP" id="buttonRevivePet">Revive?</button>
+            -->
+
+        </div>
+
+        <script src="/VirtualPet/Docs/Assets/js/script.js"></script>
+    </div>
+
+    <div class="container">
+        <p>Feito com <span class="heart">❤️</span> por: Catarina Gomes</p>
+        <a href="mailto:catarina.fe.gomes@gmail.com">catarina.fe.gomes@gmail.com</a>
+    </div>
+    
+    <a href="#" class="top">Para cima &#8593;</a>      
+</body>
+</html>

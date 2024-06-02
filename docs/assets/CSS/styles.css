@@ -1,0 +1,271 @@
+body {
+	background: linear-gradient(-45deg, #050440, #100129, #000000);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  padding: 10px;
+}
+
+@keyframes gradient {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
+}
+
+body {
+    color: #ffffff;
+   }
+
+.column {
+    float: left;
+    width: 25%;
+  }
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+h2{
+  overflow-x: hidden;
+    font-family: monospace;
+    font-style: normal;
+}
+
+h3{
+  overflow-x: hidden;
+    font-family: monospace;
+    font-style: normal;
+}
+
+p{
+  overflow-x: hidden;
+    font-family: monospace;
+    font-style: normal;
+}
+
+small{
+  overflow-x: hidden;
+    font-family: monospace;
+    font-style: normal;
+}
+
+body::-webkit-scrollbar {
+  width: 0; /* Oculta a barra de rolagem no Chrome, Safari e Opera */
+}
+
+.title{
+    text-align: center;
+    padding: 10px;
+}
+.group{
+  padding: 20px;
+  margin-bottom: 70px;
+}
+.subtitle
+
+.description
+
+.aboutme{
+  float: left;
+  width: 55%;
+  padding: 20px;
+}
+.profileImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+.profileImage:hover{
+  
+  box-shadow: 0px 0px 20px 10px #ffbb763f;
+  border: 1px solid rgba(255, 255, 255, 0.454);
+  transform: scale(1.1);
+}
+
+
+.habilities{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.project1{
+    float: left;
+    width: 55%;
+    padding: 20px;
+}
+.project2{
+    float: right;
+    width: 55%;
+    padding: 20px;
+}
+.projectImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    transition: transform 0.5s ease;
+}
+.projectImage:hover{
+  transform: scale(1.1);
+}
+.projects{
+    float: right;
+    width: 50%;
+    padding: 10px;
+}
+.center{
+    text-align: center;
+    padding: 20px;
+}
+.curriculumButton{
+    padding: 20px;
+}
+
+/*------------ menu ---------------*/
+.menu{
+  text-align: right;
+  padding-left: 20%;
+}
+
+button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+  font-family: "VT323", monospace;
+  font-style: normal;
+  font-size: 3vmin;
+}
+
+#btn:hover{
+  color: #ffffff;
+  background: #6290C3;
+  box-shadow: 0 0 25px #6290C3;
+}
+
+/*------------ Language Button ------------*/
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  .button {
+    size: 5px;
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.5);
+    --animation-color: #6290C3;
+    --fs-size: 25px;
+    padding-bottom: 0px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "VT323", monospace;
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    padding-top: 6px;
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+  .button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    font-family: "VT323", monospace;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+.actual-text {
+  transition: opacity 0.5s ease 0.2s; /* Aparece lentamente após tirar o cursor */
+  opacity: 1;
+}
+
+.button:hover .actual-text {
+  transition: opacity 0s; /* Desaparece imediatamente ao fazer hover */
+  opacity: 0;
+}
+
+  /*----------- voltar para cima -----------*/
+.top {
+  float: right;
+  overflow: hidden;
+  --offset: 50px; 
+   
+  position: sticky;
+  bottom: 20px;      
+  margin-right:10px; 
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+
+  /* visual styling */
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+  font-family: "VT323", monospace;
+  font-style: normal;
+  font-size: 3vmin;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
